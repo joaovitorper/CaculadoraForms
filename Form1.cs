@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CaculadoraForms
 {
-    public partial class Form1 : Form
+    public partial class btnDividido : Form
     {
-        public Form1()
+        public btnDividido()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
