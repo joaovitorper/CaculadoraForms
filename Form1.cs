@@ -26,7 +26,28 @@ namespace CaculadoraForms
 
         {
             //implementar Depois...
-        }
+            string expressao = txtTela.Text;
+
+            // Criar um DataTable para usar o método Compute:
+            var dt = new System.Data.DataTable();
+
+            // Calcular a expressão:
+            var resultado = dt.Compute(expressao, "");
+            // Mostrar na tela:
+            txtTela.Text = resultado.ToString();
+
+            // Verificar se a divisão foi feita por zero, e mostrar o erro:
+            if (txtTela.Text == "∞")
+            {
+                btnLimpar.PerformClick();
+                MessageBox.Show("Impossível divir por zero!", "Erro!",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            // "levantar a bandeirinha"
+            operadorClicado = true;
+        }           
+
+
         private void numero_Click(object sender, EventArgs e)
         {
             // obter o botão que está chamando esse evento:
@@ -39,18 +60,17 @@ namespace CaculadoraForms
         }
         private void operador_Click(object sender, EventArgs e ) 
         {
-            // obter o botão que está chamando esse evento:
-            Button BotaoClicado = (Button)sender;
-            //Adicionar o Text do botão Clicando no TextBox
-            txtTela.Text += BotaoClicado.Text;
+           
             if (operadorClicado == false)
             {
                 //Obter um botão que está chamando esse evento:
                 Button botaoClicado = (Button)sender;
                 //adicionar o text do botão criado no TextBox:
                 txtTela.Text += botaoClicado.Text;
-                //mudar o operadorClicado para true:
+               
+                //Mudar o operadorClicado para true:
                 operadorClicado = true;
+
             }
 
         }
@@ -60,6 +80,10 @@ namespace CaculadoraForms
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
+            //Limpar a Tela:
+            txtTela.Text = "";
+            //voltar o operador clicando para true:
+            operadorClicado = true;
 
         }
 

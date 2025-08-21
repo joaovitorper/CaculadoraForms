@@ -166,6 +166,7 @@
             this.btnigual.TabIndex = 10;
             this.btnigual.Text = "=";
             this.btnigual.UseVisualStyleBackColor = true;
+            this.btnigual.Click += new System.EventHandler(this.btnigual_Click);
             // 
             // btnLimpar
             // 
@@ -187,6 +188,7 @@
             this.btnMais.TabIndex = 12;
             this.btnMais.Text = "+";
             this.btnMais.UseVisualStyleBackColor = true;
+            this.btnMais.Click += new System.EventHandler(this.operador_Click);
             // 
             // btnvezes
             // 
@@ -198,6 +200,7 @@
             this.btnvezes.TabIndex = 13;
             this.btnvezes.Text = "*";
             this.btnvezes.UseVisualStyleBackColor = true;
+            this.btnvezes.Click += new System.EventHandler(this.operador_Click);
             // 
             // dividido
             // 
@@ -209,11 +212,12 @@
             this.dividido.TabIndex = 14;
             this.dividido.Text = "/";
             this.dividido.UseVisualStyleBackColor = true;
+            this.dividido.Click += new System.EventHandler(this.operador_Click);
             // 
             // txtTela
             // 
             this.txtTela.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTela.ForeColor = System.Drawing.Color.White;
+            this.txtTela.ForeColor = System.Drawing.Color.Black;
             this.txtTela.Location = new System.Drawing.Point(72, 118);
             this.txtTela.Name = "txtTela";
             this.txtTela.Size = new System.Drawing.Size(246, 44);
