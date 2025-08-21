@@ -39,7 +39,7 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnigual = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnMais = new System.Windows.Forms.Button();
             this.btnvezes = new System.Windows.Forms.Button();
@@ -147,16 +147,15 @@
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnigual
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(256, 291);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 44);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "=";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnigual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnigual.Location = new System.Drawing.Point(256, 291);
+            this.btnigual.Name = "btnigual";
+            this.btnigual.Size = new System.Drawing.Size(62, 44);
+            this.btnigual.TabIndex = 10;
+            this.btnigual.Text = "=";
+            this.btnigual.UseVisualStyleBackColor = true;
             // 
             // btnLimpar
             // 
@@ -202,11 +201,11 @@
             // 
             // txtTela
             // 
+            this.txtTela.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTela.ForeColor = System.Drawing.Color.White;
-            this.txtTela.Location = new System.Drawing.Point(24, 34);
+            this.txtTela.Location = new System.Drawing.Point(72, 118);
             this.txtTela.Name = "txtTela";
-            this.txtTela.ReadOnly = true;
-            this.txtTela.Size = new System.Drawing.Size(246, 20);
+            this.txtTela.Size = new System.Drawing.Size(246, 44);
             this.txtTela.TabIndex = 15;
             this.txtTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -215,13 +214,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(71)))), ((int)(((byte)(222)))));
-            this.ClientSize = new System.Drawing.Size(397, 437);
+            this.ClientSize = new System.Drawing.Size(396, 437);
             this.Controls.Add(this.txtTela);
             this.Controls.Add(this.dividido);
             this.Controls.Add(this.btnvezes);
             this.Controls.Add(this.btnMais);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnigual);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
@@ -256,7 +255,7 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnigual;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnMais;
         private System.Windows.Forms.Button btnvezes;
